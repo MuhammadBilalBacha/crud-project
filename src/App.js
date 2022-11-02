@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import FormData from "./Component/Form";
+import "./App.css";
+import MyData from "./Component/MyData.js/MyData";
+import { Routes, Route } from "react-router-dom";
+import Edit from "./Component/Edit/Edit";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ToastContainer />
+      <Routes>
+        <Route path="/" element={<FormData />} />
+        <Route path="/mydata" element={<MyData />} />
+        <Route path="/edit" element={<Edit />} />
+      </Routes>
     </div>
   );
 }

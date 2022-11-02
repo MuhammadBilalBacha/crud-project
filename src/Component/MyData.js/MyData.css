@@ -1,0 +1,19 @@
+.myCard {
+    background-color: antiquewhite;
+    border-bottom: 2px solid coral;
+    border-radius: 4px;
+    padding-block: 10px;
+}
+.myTag {
+    background-color: antiquewhite;
+        
+        border-radius: 4px;
+        padding-block: 10px;
+}
+.mybutton {
+    border: none;
+    background-color: rgb(117, 88, 50);
+    color: white;
+    border-radius: 4px;
+    
+}
